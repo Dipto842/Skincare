@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./Commnet/Navbar";
+import Footer from "./Commnet/Footer";
 
 
 const Maine = () => {
@@ -7,6 +8,7 @@ const Maine = () => {
         <div>
 <Navbar></Navbar>
             <Outlet></Outlet>
+            <Footer></Footer>
         </div>
     );
 };
