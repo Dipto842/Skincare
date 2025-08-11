@@ -1,0 +1,45 @@
+@media (max-width:431px){
+    /* footer */
+    .footer_hedar_1 {
+        width: 275px;
+        margin-top: 100px;
+        margin-left: 30px;
+        font-size: 34px;
+        text-align: center;
+
+    }
+    .text_right{
+       
+        text-align: center;
+      width: 275px;
+       
+        margin-left: 30px;
+        font-size: 34px;
+
+
+    }
+    .text_aline_left{
+        text-align: right;
+        margin-top: 80px;
+        margin-right: 80px;
+    }
+    .sosar{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    padding-top:  40px;
+       
+    }
+
+    .last{
+        font-size: 90px; 
+    margin-top: 50px;
+    
+    }
+    .marjin_right{
+        
+    }
+    /* footer End */
+    
+}
