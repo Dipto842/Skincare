@@ -9,10 +9,10 @@ import { FaShoppingCart } from "react-icons/fa";
 
 
 const products = [
-  { id: 1, name: "ALYA SKIN CLEANSER.", price: "$29.99", img:'../../public/icone/cirim.png'},
-  { id: 2, name: "RITUAL OF SAKURA.", price: "$27.99", img: '../../public/icone/cirim1.png' },
-  { id: 3, name: "THE BODY LOTION.", price: "$19.99", img: '../../public/icone/cirim2.png'},
-  { id: 4, name: "THE BODY LOTION.", price: "$19.99", img:'../../public/icone/cirim2.png' }
+  { id: 1, name: "ALYA SKIN CLEANSER.", price: "$29.99", img:'/icone/cirim.png'},
+  { id: 2, name: "RITUAL OF SAKURA.", price: "$27.99", img: '/icone/cirim1.png' },
+  { id: 3, name: "THE BODY LOTION.", price: "$19.99", img: '/icone/cirim2.png'},
+  { id: 4, name: "THE BODY LOTION.", price: "$19.99", img:'/icone/cirim2.png' }
 ];
 
 
