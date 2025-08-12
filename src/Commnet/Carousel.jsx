@@ -38,7 +38,7 @@ export default function ProductSlider() {
       <div className="lg:flex  items-center justify-between mb-32 ">
          <div className=" w-[200px] h-[40px] rounded-full border border-black justify-evenly items-center flex text-center ml-12 ">
                 <div className="border border-[#2D3B36] w-[15px] bg-[#2D3B36]  h-[15px] rounded-full"></div>
-                <h1 className="text-[#2D3B36] ">Why Our Products</h1>
+                <h1 className="text-[#2D3B36] ">Best Selling Products</h1>
 
             </div>
         <h2 className="text-[50px] Products font-bold w-[678px] h-[117px]">

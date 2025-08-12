@@ -1,5 +1,5 @@
-import img from '../../public/icone/skin_care_beauty_cosmetic_packaging_design_agency_mumbai_delhi_bangalore_india 1.png'
-import img1 from '../../public/icone/ChatGPT Image Jun 15, 2025, 10_24_47 PM 2.png'
+import img from '/icone/skin_care_beauty_cosmetic_packaging_design_agency_mumbai_delhi_bangalore_india 1.png'
+import img1 from '/icone/ChatGPT Image Jun 15, 2025, 10_24_47 PM 2.png'
 import '../Style/Style.css'
 import '../Style/HeroSection.css'
 

@@ -1,6 +1,6 @@
 import '../Style/Style.css'
-import img from '../../public/icone/BESTCARE.png'
-import img1 from '../../public/icone/award-svgrepo-com 1.png'
+import img from '/icone/BESTCARE.png'
+import img1 from '/icone/award-svgrepo-com 1.png'
 const BESTCARE = () => {
     return (
         <div className="bg-white mt-40">
