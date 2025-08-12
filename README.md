@@ -1,12 +1,38 @@
-# React + Vite
+# Luxury Skincare Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a fully responsive landing page for a luxury skincare brand, built precisely according to the provided Figma design. It showcases pixel-perfect UI implementation with smooth animations and interactive elements using React, Tailwind CSS, and GSAP.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo  
+https://skincare-eosin.vercel.app
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Features
+
+- **Responsive Design**: Optimized for Mobile, Tablet, and Desktop devices using Tailwind CSS.  
+- **Loading Screen Animation**: Smooth, elegant fade-out effect on initial page load for a premium feel.  
+- **Landing Section Text Animation**: Subtle word-by-word darkening animation on scroll that brings the text to life.  
+- **Best Selling Products**: Horizontally sliding product cards with animated, tactile buttons for mobile and tablet views.  
+- **FAQ Section**: Smooth expand/collapse animation with ease-in-out transitions for better UX.  
+- **Pixel-Perfect Layout**: Carefully matched to the Figma design with attention to spacing, typography, and colors.
+
+---
+
+## 🧰 Tech Stack
+
+- React.js (Create React App)  
+- Tailwind CSS for styling and responsiveness  
+- GSAP (GreenSock Animation Platform) for animations  
+- Vercel / Netlify for deployment  
+
+---
+
+## ⚙️ Installation & Running Locally
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Dipto842/Skincare.git
+cd luxury-skincare-landing
