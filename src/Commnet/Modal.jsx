@@ -14,7 +14,7 @@ const Modal = () => {
           Feel Beautiful Inside and Out
           <br />with Every Product.
         </h1>
-        <button className='btn w-[180px] h-[60px] rounded-3xl lg:mt-20 bg-white text-[#2D3B36] text-[20px]'>
+        <button className='btn hover:bg-lime-600 w-[180px] h-[60px] rounded-3xl lg:mt-20 bg-white text-[#2D3B36] text-[20px]'>
           Shop Now
         </button>
       </div>

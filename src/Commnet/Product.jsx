@@ -88,7 +88,7 @@ const Product = () => {
 
                 <div className="lg:w-[440px] lg:h-[120px] avetar3 bg-white relative lg:-mt-[140px] mb-8 ml-14 text-center">
                   <div className="flex justify-between flex-row-reverse items-center mt-1 text-center gap-4">
-                    <div className="lg:w-[80px] imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center">
+                    <div className="lg:w-[80px] btn hover:bg-lime-600 imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center">
                       <p className="imges4 text-[30px] text-[#2D3B36] ">
                         <FaShoppingCart />
                       </p>
@@ -130,7 +130,7 @@ const Product = () => {
 
                 <div className="lg:w-[440px] lg:h-[120px] avetar3 bg-white relative lg:-mt-[140px] mb-8 ml-14 text-center">
                   <div className="flex justify-between flex-row-reverse items-center mt-1 text-center gap-4">
-                    <div className="lg:w-[80px] imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center">
+                    <div className="lg:w-[80px] btn hover:bg-lime-600 imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center">
                       <p className="imges4 text-[30px] text-[#2D3B36] ">
                         <FaShoppingCart />
                       </p>
@@ -171,7 +171,7 @@ const Product = () => {
 
                 <div className="lg:w-[440px] lg:h-[120px] avetar3 bg-white relative lg:-mt-[140px] mb-8 ml-14 text-center">
                   <div className="flex justify-between flex-row-reverse items-center mt-1 text-center gap-4">
-                    <div className="lg:w-[80px] imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center">
+                    <div className="lg:w-[80px] btn hover:bg-lime-600 imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center">
                       <p className="imges4 text-[30px] text-[#2D3B36] ">
                         <FaShoppingCart />
                       </p>
@@ -214,7 +214,7 @@ const Product = () => {
 
                 <div className="lg:w-[440px] lg:h-[120px] avetar3 bg-white relative lg:-mt-[140px] mb-8 ml-14 text-center">
                   <div className="flex justify-between flex-row-reverse items-center mt-1 text-center gap-4">
-                    <div className="lg:w-[80px] imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center">
+                    <div className="lg:w-[80px] btn hover:bg-lime-600 imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center">
                       <p className="imges4 text-[30px] text-[#2D3B36] ">
                         <FaShoppingCart />
                       </p>

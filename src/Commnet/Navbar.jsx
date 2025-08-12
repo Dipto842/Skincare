@@ -18,7 +18,7 @@ const Navbar = () => {
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
        
-       <li><Link>All Products</Link></li>
+       <li className='hover:bg-lime-600'><Link>All Products</Link></li>
       <li><Link>serum</Link></li>
       <li><Link>sunscreen</Link></li>
       <li><Link>Bundle</Link></li>
@@ -30,10 +30,10 @@ const Navbar = () => {
     <ul className="menu menu-horizontal px-1">
         
 
-      <li><Link>All Products</Link></li>
-      <li><Link>serum</Link></li>
-      <li><Link>sunscreen</Link></li>
-      <li><Link>Bundle</Link></li>
+      <li className='hover:bg-lime-600 rounded-full'><Link>All Products</Link></li>
+      <li className='hover:bg-lime-600 rounded-full'><Link>serum</Link></li>
+      <li className='hover:bg-lime-600 rounded-full'><Link>sunscreen</Link></li>
+      <li className='hover:bg-lime-600 rounded-full'><Link>Bundle</Link></li>
     </ul>
   </div>
   <div className="navbar-end flex items-center gap-3">

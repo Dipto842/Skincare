@@ -2,8 +2,37 @@ import img from '/icone/skin_care_beauty_cosmetic_packaging_design_agency_mumbai
 import img1 from '/icone/ChatGPT Image Jun 15, 2025, 10_24_47 PM 2.png'
 import '../Style/Style.css'
 import '../Style/HeroSection.css'
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const HeroSection = () => {
+
+    const paraRef = useRef(null);
+
+  useEffect(() => {
+    const words = paraRef.current.querySelectorAll("span");
+
+    gsap.fromTo(
+      words,
+      { opacity: 0.2, color: "#9ca3af" }, // Light gray text before animation
+      {
+        opacity: 1,
+        color: "#2D3B36", // Dark greenish text
+        stagger: 0.15,
+        duration: 0.5,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: paraRef.current,
+          start: "top 80%", // Animation starts when 80% viewport reached
+        },
+      }
+    );
+  }, []);
+  
+  const text ="Experience the ultimate in skincare with our expertly formulated products, crafted to nourish, protect, and rejuvenate your skin. Combining the finest natural ingredients with advanced science, our collection ensures every skin type can achieve a radiant, healthy glow. Embrace your beauty with confidence every day. Experience the ultimate in skincare with our expertly formulated products, crafted to nourish, protect, and rejuvenate your skin."
     return (
       <div>
 
@@ -24,7 +53,7 @@ NATUR-ALLY</h1>
 
 
         <div className='lg:flex Herro1  items-center gap-52 mt-20 lg:ml-28'>
-            <button className='btn bg-[#2D3B36] rounded-full w-[180px] button1 h-[60px]'> Shop Now</button>
+            <button className='btn bg-[#2D3B36] rounded-full w-[180px] hover:bg-lime-600 button1 h-[60px]'> Shop Now</button>
           <div className='z-10'>
               <img className='lg:w-[610px] lg:h-[680px]  imges2' src={img1} alt="" />
                
@@ -47,15 +76,20 @@ NATUR-ALLY</h1>
 
 {/* peragerap */}
 
-<div className='bg-[#FEFFF4] pragirap2'>
-    <p className='font_normal pragirap2 lg:text-[40px] pt-24 lg:leading-[78px] text-[#2D3B36] lg:mr-[5rem] lg:ml-20'>Experience the ultimate in skincare with our expertly formulated products,
-crafted to nourish, protect, and rejuvenate your skin. Combining the finest
-natural ingredients with advanced science, our collection ensures every
-skin type can achieve a radiant, healthy glow. Embrace your beauty with
-confidence every day. Experience the ultimate in skincare with our 
-expertly formulated products, crafted to nourish, protect, and rejuvenate
-your skin.</p>
-</div>
+
+  
+    <div className="bg-[#FEFFF4] pragirap2">
+      <p
+        ref={paraRef}
+        className="font_normal pragirap2 lg:text-[40px] pt-24 lg:leading-[78px] text-[#2D3B36] lg:mr-[5rem] lg:ml-20"
+      >
+        {text.split(" ").map((word, index) => (
+          <span key={index} className="inline-block mr-1">
+            {word}
+          </span>
+        ))}
+      </p>
+    </div>
 
       </div>
     );
