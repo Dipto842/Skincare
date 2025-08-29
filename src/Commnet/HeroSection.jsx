@@ -36,7 +36,7 @@ const HeroSection = () => {
     return (
       <div>
 
-  <div className="bg-[#eff5e1] herro lg:h-[1204px]"> 
+  <div className="bg-[#eff5e1] herro lg:h-[1204px] z-"> 
 
         <div className='lg:flex  lg:justify-around items-center'>
              <div className='lg:flex lg:flex-row-reverse items-center lg:gap-40'>
@@ -45,7 +45,7 @@ NATUR-ALLY</h1>
             <p className='w-[335px] peragirap3 lg:mt-32 font_normal text-[20px] text-[#2D3B36]'>Transform your skincare routine with premium products that restore, protect, and enhance your nautural glow every day.</p>
           
              </div>
-<img width={'222px'} className=' lg:h-[220px] imges1'  src={img} alt="" />
+<img width={'222px'} className=' lg:h-[220px] imges1 '  src={img} alt="" />
 
 
         </div>
@@ -55,13 +55,13 @@ NATUR-ALLY</h1>
         <div className='lg:flex Herro1  items-center gap-52 mt-20 lg:ml-28'>
             <button className='btn bg-[#2D3B36] rounded-full w-[180px] hover:bg-lime-600 button1 h-[60px]'> Shop Now</button>
           <div className='z-10'>
-              <img className='lg:w-[610px] lg:h-[680px]  imges2' src={img1} alt="" />
+              <img className='lg:w-[610px] lg:h-[680px] z-10  imges2' src={img1} alt="" />
                
-              <div className='avetar w-[360px] h-[60px] bg-white rounded-full absolute lg:bottom-[-480px] lg:left-[590px] text-center'>
+              <div className='avetar w-[360px] h-[60px]  rounded-full relative lg:bottom-[100px] lg:left-[100px] text-center'>
 
-<div className='flex justify-evenly items-center mt-1 gap-3 '>
+<div className='flex justify-evenly items-center mt-1    lg:top-[-450rem] bg-white rounded-3xl avetar z-10 gap-3 '>
     <img className='w-[50px] h-[50px] rounded-full ml-3 imges2' src={img} alt="" />
-    <p className='w-[304px] text-[16px] text-start text-[#2D3B36] leading-[20px] font_normal'>While giving you an invigorating cleansing experience.</p>
+    <p className='lg:w-[304px] text-[16px] text-start text-[#2D3B36] leading-[20px] font_normal'>While giving you an invigorating cleansing experience.</p>
 </div>
               </div>
           </div>
@@ -81,7 +81,7 @@ NATUR-ALLY</h1>
     <div className="bg-[#FEFFF4] pragirap2">
       <p
         ref={paraRef}
-        className="font_normal pragirap2 lg:text-[40px] pt-24 lg:leading-[78px] text-[#2D3B36] lg:mr-[5rem] lg:ml-20"
+        className="font_normal  lg:text-[40px] lg:pt-24 lg:leading-[78px] text-[#2D3B36] lg:mr-[5rem] lg:ml-20"
       >
         {text.split(" ").map((word, index) => (
           <span key={index} className="inline-block mr-1">

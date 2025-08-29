@@ -13,11 +13,11 @@ margin-top: 20px;
     
 }
 .card{
-    margin-bottom:120px ;
+    margin-bottom:20px ;
 }
 .avetar3{
     width: 268px;
-    height: 61px;
+    height: 100px;
     top: -200px;
     margin-left: 50px;
 }
@@ -38,6 +38,18 @@ width: 73px;
 height: 9px;
 padding-top:10px;
 
+}
+.buttonwidth{
+    width: 300px;
+gap: 40px;
+}
+.button2{
+    font-size: 50px;
+     padding-right: 35px;
+}
+.button3{
+    font-size: 50px;
+    padding-left: 35px;
 }
 }
 
@@ -71,8 +83,8 @@ padding-top:10px;
 }
 .avetar3{
     width: 268px;
-    height: 61px;
-    top: -200px;
+    height: 100px;
+    top: -250px;
     margin-left: 50px;
 }
 

@@ -2,8 +2,8 @@ import '../Style/Footer.css'
 
 const Footer = () => {
     return (
-        <div className='mb-32'>
-            <div className='bg-[#2D3B36] w-full  h-[700px] overflow-hidden mb-20 '>
+        <div className=''>
+            <div className='bg-[#2D3B36] w-full  lg:h-[700px] overflow-hidden mb-0 '>
 <div className='lg:flex items-center justify-around'>
 {/* left */}
 <div>

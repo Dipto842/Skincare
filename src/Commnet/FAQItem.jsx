@@ -4,7 +4,7 @@ import "../Style/Style.css"
 import "../Style/FAQ.css"
 const FAQItem = () => {
     return (
-        <div className='lg:flex mt-40 mb-40 imges6 justify-evenly '>
+        <div className='lg:flex lg:mt-40 mb-40 imges6 justify-evenly '>
             {/* imges */}
 <div>
 <img className='lg:w-[700px] h-[900px]' src={imges} alt="" />

@@ -55,7 +55,7 @@ the tender loving care it deserves.</p>
 <div>
 
 <img className='h-[849px] ' src={img} alt="" />
-   <div className=' w-[360px] h-[60px] avetar2 bg-white rounded-full absolute lg:bottom-[-2100px] lg:left-[1000px] text-center'>
+   <div className=' w-[360px] h-[60px] avetar2 bg-white rounded-full absolute lg:top-[2800px] lg:left-[1000px] text-center'>
 
 <div className='flex justify-evenly items-center mt-1 gap-3 '>
     <img className='w-[50px] imges4 h-[50px] rounded-full ml-3 bg-[#2D3B36]' src={img1} alt="" />
