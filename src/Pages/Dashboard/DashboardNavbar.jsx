@@ -27,6 +27,8 @@ const DashboardNavbar = () => {
         <li><Link to={''}>Add Iteam</Link></li>
         
         <li><Link to={'Alliteam'}>All Iteam</Link></li>
+        <li><Link to={'PieChart'}>Pie Chart</Link></li>
+        <li><Link to={'alluser'}>AllUser</Link></li>
       </ul>
     </div>
   </div>

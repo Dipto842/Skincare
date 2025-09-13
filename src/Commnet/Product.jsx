@@ -23,11 +23,16 @@ const Product = () => {
   const [activeTab, setActiveTab] = useState(2);
   const [products, setproducts] = useState([]);
 
+  const functionData =async()=>{
+const Data = await axios.get("https://skincare-backend-seven.vercel.app/carid")
+console.log(Data,'Data');
+
+setproducts(Data)
+  }
+
   useEffect(() => {
-    axios
-      .get("http://localhost:5000/carid")
-      .then((res) => setproducts(res.data))
-      .catch((err) => console.error("Error:", err));
+   functionData
+      
   }, []);
 
   const prevRef = useRef(null);
@@ -49,7 +54,7 @@ const Product = () => {
       console.log(item._id, id);
       if (item._id === id) {
         axios
-          .post("http://localhost:5000/sidebarData/add", item)
+          .post("https://skincare-backend-seven.vercel.app/sidebarData/add", item)
 
           .then(() => {
             Swal.fire({
@@ -342,6 +347,7 @@ const Product = () => {
           </div>
         )}
       </div>
+      
     </div>
   );
 };

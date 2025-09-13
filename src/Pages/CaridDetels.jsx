@@ -13,7 +13,7 @@ const CaridDetels = () => {
      
      
        const freceData = async()=>{
-   const Data = await axios.get("http://localhost:5000/carid")
+   const Data = await axios.get("https://skincare-backend-seven.vercel.app/carid")
    const detels = Data.data.find(product => product._id === id)
              setProducts(detels)
   }
@@ -25,7 +25,7 @@ const CaridDetels = () => {
      
   const  hendewhattlist = (products)=>{
 
-axios.post('http://localhost:5000/whattlist',products)
+axios.post('https://skincare-backend-seven.vercel.app/whattlist',products)
 .then( ()=>{
    Swal.fire({
         title: "Product Add to Whattlist🥰😘",
@@ -64,7 +64,7 @@ Swal.fire({
 
     if (products._id === id) {
       axios
-        .post("http://localhost:5000/sidebarData/add", products)
+        .post("https://skincare-backend-seven.vercel.app/sidebarData/add", products)
 
         .then(() => {
           Swal.fire({

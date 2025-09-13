@@ -22,7 +22,7 @@ export default function ProductSlider() {
   const [swiperInstance, setSwiperInstance] = useState(null);
 
   const freceData = async()=>{
-   const Data = await axios.get("http://localhost:5000/carid")
+   const Data = await axios.get("https://skincare-backend-seven.vercel.app/carid")
              setProducts(Data.data)
   }
 
@@ -48,7 +48,7 @@ products.map((item)=>{
    
   
    
-      axios.post('http://localhost:5000/sidebarData/add',item)
+      axios.post('https://skincare-backend-seven.vercel.app/sidebarData/add',item)
        
       .then( ()=>{
         

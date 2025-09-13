@@ -11,6 +11,7 @@ import { GoogleAuthProvider } from "firebase/auth";
 const AthoProvadar = ({children }) => {
     const Googleprovider = new GoogleAuthProvider()
 const [user,setuser]=useState(null)
+ const [loading, setLoading] = useState(true);
 
 const singup = (email, password, name) => {
   return createUserWithEmailAndPassword(auth, email, password)
@@ -68,6 +69,7 @@ useEffect(()=>{
  const unsubscribe = onAuthStateChanged(auth,currentUser =>{
         
             setuser(currentUser)
+            setLoading(false)
         
      })
      return ()=> unsubscribe()
@@ -79,7 +81,8 @@ singup,
 singin,
 logout,
 updateProfil,
-Google
+Google,
+loading
 }
 
 return (

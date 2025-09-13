@@ -55,7 +55,7 @@ const Add = () => {
                 <option disabled selected>
                   All
                 </option>
-                <option>"NEW ARRIVAL</option>
+                <option>NEW ARRIVAL</option>
                 <option>ANTI AGGING</option>
                 <option>CLEANSING</option>
                 

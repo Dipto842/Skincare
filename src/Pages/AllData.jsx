@@ -4,13 +4,14 @@ import { FaRegHeart, FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import '../Style/AllData.css'
 import Swal from "sweetalert2";
+import { div } from "framer-motion/client";
 
 const AllData = () => {
     const [Data,setData]=useState([])
     const [selekt,setselekt]=useState("All")
     const [stock,setstock]=useState("All")
     useEffect(()=>{
-        axios.get('http://localhost:5000/AllData')
+        axios.get('https://skincare-backend-seven.vercel.app/AllData')
         .then(data=>setData(data.data))
 
     },[])
@@ -25,7 +26,7 @@ Data.map((item)=>{
    
   
    
-      axios.post('http://localhost:5000/sidebarData/add',item)
+      axios.post('https://skincare-backend-seven.vercel.app/sidebarData/add',item)
        
       .then( ()=>{
         
@@ -53,7 +54,7 @@ Data.map((item)=>{
   // whattlist 
   const hendewhattlist = (products) => {
     axios
-      .post("http://localhost:5000/whattlist", products)
+      .post("https://skincare-backend-seven.vercel.app/whattlist", products)
       .then(() => {
         Swal.fire({
           title: "Product Add to Whattlist🥰😘",
@@ -83,7 +84,9 @@ Data.map((item)=>{
   
 
 
-
+if(Data.length===0){
+  return <div className="text-center text-4xl font-bold">Loading...</div>
+}
     return (
       <div>
         <div>
@@ -151,6 +154,7 @@ onChange={e=>setselekt(e.target.value)}
         ))
          }
         </div>
+      
       </div>
     );
 };

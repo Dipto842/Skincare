@@ -19,6 +19,8 @@ import Add from "../Pages/Dashboard/dashboardPages/Add";
 
 import AllIteam from "../Pages/Dashboard/dashboardPages/AllIteam";
 import Up from "../Pages/Dashboard/dashboardPages/Updeate/Up";
+import MyPieChart from "../Pages/Dashboard/PieChart";
+import AllUser from "../Pages/Dashboard/AllUser";
 
 
 
@@ -56,17 +58,17 @@ element:<ProductSlider></ProductSlider>
       },
       {
         path:'/deteil/:id',
-        element:<PrivateRoute><CaridDetels></CaridDetels></PrivateRoute>,
+        element:<CaridDetels></CaridDetels>,
 
       
       },
       {
         path:'/whattlist',
-        element:<PrivateRoute><Whattlist></Whattlist></PrivateRoute>
+        element:<Whattlist></Whattlist>
       },
       {
         path:'/AllData',
-        element:<PrivateRoute><AllData></AllData></PrivateRoute>
+        element:<AllData></AllData>
       },
       {
         path:'/AllDataDetels/:id',
@@ -109,7 +111,16 @@ element:<ProductSlider></ProductSlider>
         path:'updete/:id',
         element:<Up></Up>,
         
+      },
+      {
+        path:'PieChart',
+        element:<MyPieChart></MyPieChart>
+      },
+      {
+        path:'alluser',
+        element:<AllUser></AllUser>
       }
+    
       
     ]
   }
