@@ -23,15 +23,12 @@ const Product = () => {
   const [activeTab, setActiveTab] = useState(2);
   const [products, setproducts] = useState([]);
 
-  const functionData =async()=>{
-const Data = await axios.get("https://skincare-backend-seven.vercel.app/carid")
-console.log(Data,'Data');
-
-setproducts(Data)
-  }
+  
 
   useEffect(() => {
-   functionData
+   axios.get("https://skincare-backend-seven.vercel.app/carid")
+   .then(res=>setproducts(res.data))
+
       
   }, []);
 
@@ -98,7 +95,7 @@ setproducts(Data)
       {products.length === 0 ? (
         <div className="text-center text-3xl font-bold mt-20 ">
           {" "}
-          Loading
+          Loading....
           <span className="">
             <FaRegHeart />
           </span>

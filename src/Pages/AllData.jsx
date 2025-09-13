@@ -4,7 +4,7 @@ import { FaRegHeart, FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import '../Style/AllData.css'
 import Swal from "sweetalert2";
-import { div } from "framer-motion/client";
+
 
 const AllData = () => {
     const [Data,setData]=useState([])
