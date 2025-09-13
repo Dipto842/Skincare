@@ -127,8 +127,8 @@ products.map((item)=>{
             </div>
             
              </Link>
-             <div className=' lg:w-[440px] h-[120px] avetar3 bg-white  relative lg:-mt-[140px] lg:mb-8 ml-4 text-center'>
-             <span className="badge badge-secondary mr-[330px] z-20 mb-0">
+             <div className=' lg:w-[410px] h-[120px] avetar3 bg-white  relative lg:-mt-[140px] lg:mb-8 ml- text-center'>
+             <span className="badge badge-secondary mr-[380px] z-20 mb-0">
               {product.stock}
             </span>
             <div className='flex justify-between  flex-row-reverse items-center -mt-2  text-center gap-4 '>
