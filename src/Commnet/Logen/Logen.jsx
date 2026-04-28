@@ -47,7 +47,7 @@ const Login = () => {
   return (
     <div>
       <div className="  bg-[#eff5e1] min-h-screen  flex    justify-center items-center  ">
-        <div className=" border-gray-300 bg-[#f7f8f9] text-black border  grid  items-start justify-center  lg:w-[440px] shadow min-h-screen mt-5 mb-2 ">
+        <div className=" border-gray-300 relative bg-[#f7f8f9] text-black border  grid  items-start justify-center  lg:w-[440px] shadow min-h-screen mt-5 mb-2 ">
         
            
 
@@ -77,8 +77,8 @@ const Login = () => {
             <div className=" mx-auto mt-6">
              <input type="submit" className="mx-auto btn btn-secondary  h-11 rounded-lg  text-white   w-full"></input>
             </div>
+      <div className=" text-pink-500 "> <a href="/register">Create a new account</a></div>
           </form>
-       <div className="-mt-[190px] text-pink-500"> <a href="/register">Create a new account</a></div>
         </div>
 
       
