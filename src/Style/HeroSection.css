@@ -1,8 +1,6 @@
 
 @media (max-width:431px){
-    .herro{
-        height: 1000px;
-    }
+   
     .imges1{
 position: absolute;
 bottom: -60px;
@@ -20,22 +18,18 @@ margin-left: 10px;
 
 
     }
-    .SKINEARE2{
+    /* .SKINEARE2{
 position: absolute;
 font-size:85px; 
 bottom: -210px;
 z-index: 0;
-    }
+    } */
     .button1{
         position: absolute;
         bottom: -650px;
         right: 150px;
     }
-.avetar{
-    bottom: 265rem ;
-    left: 30px;
-    
-}
+
 
 /* BastCare */
     .cound{
@@ -83,7 +77,7 @@ margin-left: 10px;
 
 /* ipad */
 
-@media (min-width:432px) and (max-width:744px) {
+@media (max-width:981px)  {
     
 
 
@@ -99,25 +93,29 @@ margin-left: 10px;
     }
 
     .SKINEARE2{
-        font-size: 145px;
-        
-        margin-top: -100px;
-        padding-bottom: -30px;
+      width: fit-content;
+      font-size: 85px;
+      position: absolute;
+      top: 93%;
     }
     .avetar{
         position: absolute;
+       z-index: 0;
+        bottom:12%;
+        left: 20px;
+        height: 60px;
+        padding: 10px;
+       right: 15px;
        
-        top:600px;
-        left: 50px;
         
     }
-    .imges2{
-        margin-left: 20px;
-    }
+   .imges2{
+    margin-bottom: 50px;
+   }
     .pragirap2{
         font-size:31px ;
         text-align: start;
-        width: 662px;
+        width: fit-content;
         
     }
 

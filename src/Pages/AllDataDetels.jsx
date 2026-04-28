@@ -10,7 +10,7 @@ const AllDataDetels = () => {
   const { id } = useParams();
 
   const Datadetels = async () => {
-    const Data = await axios.get("https://skincare-backend-seven.vercel.app/AllData");
+    const Data = await axios.get("http://localhost:5000/AllData");
     const fineData = Data.data.find((i) => i._id === id);
 
     setData(fineData);
@@ -25,7 +25,7 @@ const AllDataDetels = () => {
 
     if (data._id === id) {
       axios
-        .post("https://skincare-backend-seven.vercel.app/sidebarData/add", data)
+        .post("http://localhost:5000/sidebarData/add", data)
 
         .then(() => {
           Swal.fire({
@@ -47,7 +47,7 @@ const AllDataDetels = () => {
 //   Whattlist 
 const hendewhattlist = (products) => {
     axios
-      .post("https://skincare-backend-seven.vercel.app/whattlist", products)
+      .post("http://localhost:5000/whattlist", products)
       .then(() => {
         Swal.fire({
           title: "Product Add to Whattlist🥰😘",

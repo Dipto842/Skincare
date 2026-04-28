@@ -11,7 +11,7 @@ const AllData = () => {
     const [selekt,setselekt]=useState("All")
     const [stock,setstock]=useState("All")
     useEffect(()=>{
-        axios.get('https://skincare-backend-seven.vercel.app/AllData')
+        axios.get('http://localhost:5000/AllData')
         .then(data=>setData(data.data))
 
     },[])
@@ -26,7 +26,7 @@ Data.map((item)=>{
    
   
    
-      axios.post('https://skincare-backend-seven.vercel.app/sidebarData/add',item)
+      axios.post('http://localhost:5000/sidebarData/add',item)
        
       .then( ()=>{
         
@@ -54,7 +54,7 @@ Data.map((item)=>{
   // whattlist 
   const hendewhattlist = (products) => {
     axios
-      .post("https://skincare-backend-seven.vercel.app/whattlist", products)
+      .post("http://localhost:5000/whattlist", products)
       .then(() => {
         Swal.fire({
           title: "Product Add to Whattlist🥰😘",
@@ -88,9 +88,9 @@ if(Data.length===0){
   return <div className="text-center text-4xl font-bold">Loading...</div>
 }
     return (
-      <div>
+      <div className=" ">
         <div>
-          <div className="navbar bg-base-100 shadow-sm grid lg:grid-cols-3  text-center  md:grid-cols-3 grid-cols-1">
+          <div className="navbar mx-auto bg-base-100 shadow-sm grid lg:grid-cols-3  text-center  md:grid-cols-3 grid-cols-1">
   
   
   <div className="lg:ml-10 text-slate-300 ">
@@ -121,12 +121,12 @@ onChange={e=>setselekt(e.target.value)}
   </div>
 </div>
         </div>
-          <div className="grid alldata lg:grid-cols-4 gap-10  mb-10 bg-base-100 ">
+          <div className="grid alldata lg:grid-cols-3 gap-6  mb-10 mt-10 ">
           
          {
         selektstock.map(i=>(
             <div className="">
-                   <div className="card bg-base-100 w-full lg:w-96 shadow-2xl h-[700px] ">
+                   <div className="card bg-base-100 w-full  shadow-2xl h-[700px] ">
   <Link to={`/AllDataDetels/${i._id}`}  className="h-[400px] cursor-pointer">
 
     <img

@@ -1,4 +1,4 @@
-@media (max-width:431px) {
+@media (max-width:981px) {
     .Products{
 font-size: 34px;
 width: 300px;
@@ -6,10 +6,7 @@ margin-top: 20px;
 }
 
 .buton{
-    position: relative;
-    bottom: -850px;
-    left: 50px;
-    z-index: 10;
+ visibility: hidden;
     
 }
 .card{
@@ -46,6 +43,7 @@ gap: 40px;
 .button2{
     font-size: 50px;
      padding-right: 35px;
+     
 }
 .button3{
     font-size: 50px;

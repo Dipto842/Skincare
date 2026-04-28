@@ -10,7 +10,7 @@ const Up = () => {
   // Fetch single product
   const fetchData = async () => {
     try {
-      const { data } = await axios.get("https://skincare-backend-seven.vercel.app/carid");
+      const { data } = await axios.get("http://localhost:5000/carid");
       const found = data.find(i => i._id === id);
       setProduct(found || {});
     } catch (error) {
@@ -53,7 +53,7 @@ const Up = () => {
       };
 
       const response = await axios.put(
-        `https://skincare-backend-seven.vercel.app/carid/update/${id}`, // backend route spelling fixed
+        `http://localhost:5000/carid/update/${id}`, // backend route spelling fixed
         upred
       );
 

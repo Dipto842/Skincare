@@ -23,13 +23,10 @@ const Product = () => {
   const [activeTab, setActiveTab] = useState(2);
   const [products, setproducts] = useState([]);
 
-  
-
   useEffect(() => {
-   axios.get("https://skincare-backend-seven.vercel.app/carid")
-   .then(res=>setproducts(res.data))
-
-      
+    axios
+      .get("http://localhost:5000/carid")
+      .then((res) => setproducts(res.data));
   }, []);
 
   const prevRef = useRef(null);
@@ -51,7 +48,7 @@ const Product = () => {
       console.log(item._id, id);
       if (item._id === id) {
         axios
-          .post("https://skincare-backend-seven.vercel.app/sidebarData/add", item)
+          .post("http://localhost:5000/sidebarData/add", item)
 
           .then(() => {
             Swal.fire({
@@ -124,29 +121,30 @@ const Product = () => {
                   />
                 </div>
 
-                <div className="lg:w-[440px] lg:h-[120px] avetar3 bg-white relative lg:-mt-[140px] mb-8 ml-14 text-center">
-                    <span className="badge badge-secondary mr-[330px] z-20 mb-0">
-              {product.stock}
-            </span>
+                <div className="lg:w-[400px] lg:h-[120px] avetar3 bg-white relative lg:-mt-[140px] mb-8 ml-14 text-start">
+                  <span className="badge badge-secondary  z-20 mb-0">
+                    {product.stock}
+                  </span>
                   <div className="flex justify-between flex-row-reverse items-center -mt-4 text-center gap-4">
-                    {
-                      product.stock ==='outstock' ? <div
-                      disabled={true}
-                      className="lg:w-[80px] btn hover:bg-lime-600 imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center"
-                    >
-                      <button className="imges4 text-[30px] text-[#2D3B36] ">
-                        <FaShoppingCart />
-                      </button>
-                    </div> : <div
-                    
-                      onClick={() => hendelcard(product._id)}
-                      className="lg:w-[80px] btn hover:bg-lime-600 imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center"
-                    >
-                      <button className="imges4 text-[30px] text-[#2D3B36] ">
-                        <FaShoppingCart />
-                      </button>
-                    </div>
-                    }
+                    {product.stock === "outstock" ? (
+                      <div
+                        disabled={true}
+                        className="lg:w-[80px] btn hover:bg-lime-600 imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center"
+                      >
+                        <button className="imges4 text-[30px] text-[#2D3B36] ">
+                          <FaShoppingCart />
+                        </button>
+                      </div>
+                    ) : (
+                      <div
+                        onClick={() => hendelcard(product._id)}
+                        className="lg:w-[80px] btn hover:bg-lime-600 imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center"
+                      >
+                        <button className="imges4 text-[30px] text-[#2D3B36] ">
+                          <FaShoppingCart />
+                        </button>
+                      </div>
+                    )}
                     <p className="avaetarName text-[20px] text-start text-[#2D3B36] ml-4 font_normal">
                       {product.name}
                     </p>
@@ -159,8 +157,6 @@ const Product = () => {
             ))}
           </Swiper>
         )}
-
-
 
         {activeTab === 1 && (
           <div>
@@ -185,29 +181,30 @@ const Product = () => {
                     />
                   </div>
 
-                  <div className="lg:w-[440px] lg:h-[120px] avetar3 bg-white relative lg:-mt-[140px] mb-8 ml-14 text-center">
-                      <span className="badge badge-secondary mr-[330px] z-20 mb-0">
-              {product.stock}
-            </span>
+                  <div className="lg:w-[390px] lg:h-[120px] avetar3 bg-white relative lg:-mt-[140px] mb-8 ml-14 text-start">
+                    <span className="badge badge-secondary  z-20 mb-0">
+                      {product.stock}
+                    </span>
                     <div className="flex justify-between flex-row-reverse items-center -mt-4 text-center gap-4">
-                      {
-                      product.stock ==='outstock' ? <div
-                      disabled={true}
-                      className="lg:w-[80px] btn hover:bg-lime-600 imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center"
-                    >
-                      <button className="imges4 text-[30px] text-[#2D3B36] ">
-                        <FaShoppingCart />
-                      </button>
-                    </div> : <div
-                    
-                      onClick={() => hendelcard(product._id)}
-                      className="lg:w-[80px] btn hover:bg-lime-600 imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center"
-                    >
-                      <button className="imges4 text-[30px] text-[#2D3B36] ">
-                        <FaShoppingCart />
-                      </button>
-                    </div>
-                    }
+                      {product.stock === "outstock" ? (
+                        <div
+                          disabled={true}
+                          className="lg:w-[80px] btn hover:bg-lime-600 imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center"
+                        >
+                          <button className="imges4 text-[30px] text-[#2D3B36] ">
+                            <FaShoppingCart />
+                          </button>
+                        </div>
+                      ) : (
+                        <div
+                          onClick={() => hendelcard(product._id)}
+                          className="lg:w-[80px] btn hover:bg-lime-600 imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center"
+                        >
+                          <button className="imges4 text-[30px] text-[#2D3B36] ">
+                            <FaShoppingCart />
+                          </button>
+                        </div>
+                      )}
                       <p className="avaetarName text-[20px] text-start text-[#2D3B36] ml-4 font_normal">
                         {product.name}
                       </p>
@@ -221,7 +218,6 @@ const Product = () => {
             </Swiper>
           </div>
         )}
-
 
         {activeTab === 2 && (
           <div>
@@ -246,29 +242,30 @@ const Product = () => {
                     />
                   </div>
 
-                  <div className="lg:w-[440px] lg:h-[120px] avetar3 bg-white relative lg:-mt-[140px] mb-8 ml-14 text-center">
-                      <span className="badge badge-secondary mr-[330px] z-20 mb-0">
-              {product.stock}
-            </span>
+                  <div className="lg:w-[390px] lg:h-[120px] avetar3 bg-white relative lg:-mt-[140px] mb-8 ml-14 text-start">
+                    <span className="badge badge-secondary z-20 mb-0">
+                      {product.stock}
+                    </span>
                     <div className="flex justify-between flex-row-reverse items-center -mt-4 text-center gap-4">
-                      {
-                      product.stock ==='outstock' ? <div
-                      disabled={true}
-                      className="lg:w-[80px] btn hover:bg-lime-600 imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center"
-                    >
-                      <button className="imges4 text-[30px] text-[#2D3B36] ">
-                        <FaShoppingCart />
-                      </button>
-                    </div> : <div
-                    
-                      onClick={() => hendelcard(product._id)}
-                      className="lg:w-[80px] btn hover:bg-lime-600 imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center"
-                    >
-                      <button className="imges4 text-[30px] text-[#2D3B36] ">
-                        <FaShoppingCart />
-                      </button>
-                    </div>
-                    }
+                      {product.stock === "outstock" ? (
+                        <div
+                          disabled={true}
+                          className="lg:w-[80px] btn hover:bg-lime-600 imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center"
+                        >
+                          <button className="imges4 text-[30px] text-[#2D3B36] ">
+                            <FaShoppingCart />
+                          </button>
+                        </div>
+                      ) : (
+                        <div
+                          onClick={() => hendelcard(product._id)}
+                          className="lg:w-[80px] btn hover:bg-lime-600 imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center"
+                        >
+                          <button className="imges4 text-[30px] text-[#2D3B36] ">
+                            <FaShoppingCart />
+                          </button>
+                        </div>
+                      )}
                       <p className="avaetarName text-[20px] text-start text-[#2D3B36] ml-4 font_normal">
                         {product.name}
                       </p>
@@ -282,7 +279,6 @@ const Product = () => {
             </Swiper>
           </div>
         )}
-
 
         {activeTab === 3 && (
           <div>
@@ -307,29 +303,30 @@ const Product = () => {
                     />
                   </div>
 
-                  <div className="lg:w-[440px] lg:h-[120px] avetar3 bg-white relative lg:-mt-[140px] mb-8 ml-14 text-center">
-                      <span className="badge badge-secondary mr-[330px] z-20 mb-0">
-              {product.stock}
-            </span>
+                  <div className="lg:w-[390px] lg:h-[120px] text-start  bg-white relative lg:-mt-[140px]  ml-14 ">
+                    <span className="badge badge-secondary mr-[] text-start z-20 mb-0">
+                      {product.stock}
+                    </span>
                     <div className="flex justify-between flex-row-reverse items-center -mt-4 text-center gap-4">
-                     {
-                      product.stock ==='outstock' ? <div
-                      disabled={true}
-                      className="lg:w-[80px] btn hover:bg-lime-600 imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center"
-                    >
-                      <button className="imges4 text-[30px] text-[#2D3B36] ">
-                        <FaShoppingCart />
-                      </button>
-                    </div> : <div
-                    
-                      onClick={() => hendelcard(product._id)}
-                      className="lg:w-[80px] btn hover:bg-lime-600 imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center"
-                    >
-                      <button className="imges4 text-[30px] text-[#2D3B36] ">
-                        <FaShoppingCart />
-                      </button>
-                    </div>
-                    }
+                      {product.stock === "outstock" ? (
+                        <div
+                          disabled={true}
+                          className="lg:w-[80px] btn hover:bg-lime-600 imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center"
+                        >
+                          <button className="imges4 text-[30px] text-[#2D3B36] ">
+                            <FaShoppingCart />
+                          </button>
+                        </div>
+                      ) : (
+                        <div
+                          onClick={() => hendelcard(product._id)}
+                          className="lg:w-[80px] btn hover:bg-lime-600 imgesbox imges4 lg:h-[80px] bg-[#2D3B361A] mr-5 mt-4 text-center flex justify-center items-center"
+                        >
+                          <button className="imges4 text-[30px] text-[#2D3B36] ">
+                            <FaShoppingCart />
+                          </button>
+                        </div>
+                      )}
                       <p className="avaetarName text-[20px] text-start text-[#2D3B36] ml-4 font_normal">
                         {product.name}
                       </p>
@@ -344,7 +341,6 @@ const Product = () => {
           </div>
         )}
       </div>
-      
     </div>
   );
 };

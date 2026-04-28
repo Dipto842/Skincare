@@ -1,4 +1,4 @@
-import img from '/icone/skin_care_beauty_cosmetic_packaging_design_agency_mumbai_delhi_bangalore_india 1.png'
+import img from '/icone/benar.jpg'
 import img1 from '/icone/ChatGPT Image Jun 15, 2025, 10_24_47 PM 2.png'
 import '../Style/Style.css'
 import '../Style/HeroSection.css'
@@ -36,39 +36,40 @@ const HeroSection = () => {
     return (
       <div>
 
-  <div className="bg-[#eff5e1] herro lg:h-[1204px] z-"> 
+  <div className="bg-[#eff5e1] herro relative z-10 overflow-hidden"> 
 
-        <div className='lg:flex  lg:justify-around items-center'>
-             <div className='lg:flex lg:flex-row-reverse items-center lg:gap-40'>
-                 <h1 className='w-[398px] lg:mt-32 font_bold_700 font-bold text-[100px] text-[#2D3B36] leading-[100px]'>GLOW
+        <div  style={{ backgroundImage: `url(${img})` }}  className='lg:flex bg-no-repeat bg-cover bg-center  lg:justify-around items-center bg-url(`${}`) '>
+             <div className=' h-[700px] items-center text-center '>
+                 <h1 className=' lg:mt-32 font_bold_700 font-bold text-[100px] bg-gradient-to-r from-green-400 via-lime-500 to-emerald-600 
+bg-clip-text text-transparent drop-shadow-lg leading-[100px]'>GLOW
 NATUR-ALLY</h1>
-            <p className='w-[335px] peragirap3 lg:mt-32 font_normal text-[20px] text-[#2D3B36]'>Transform your skincare routine with premium products that restore, protect, and enhance your nautural glow every day.</p>
+            <p className=' peragirap3 text-neutral-300 lg:mt-3 font_normal mx-auto lg:w-[500px] text-[20px] text-start'>Transform your skincare routine with premium products that restore, protect, and enhance your nautural glow every day.</p>
           
              </div>
-<img width={'222px'} className=' lg:h-[220px] imges1 '  src={img} alt="" />
+
 
 
         </div>
 
 
 
-        <div className='lg:flex Herro1  items-center gap-52 mt-20 lg:ml-28'>
+        <div className='lg:flex Herro1  items-center gap-52 mt-20  lg:ml-28 '>
             <button className='btn bg-[#2D3B36] rounded-full w-[180px] hover:bg-lime-600 button1 h-[60px]'> Shop Now</button>
-          <div className='z-10'>
+          <div className='z-10 relative'>
               <img className='lg:w-[610px] lg:h-[680px] z-10  imges2' src={img1} alt="" />
                
-              <div className='avetar w-[360px] h-[60px]  rounded-full relative lg:bottom-[100px] lg:left-[100px] text-center'>
+              <div>
 
-<div className='flex justify-evenly items-center mt-1    lg:top-[-450rem] bg-white rounded-3xl avetar z-10 gap-3 '>
-    <img className='w-[50px] h-[50px] rounded-full ml-3 imges2' src={img} alt="" />
+<div className='flex justify-evenly items-center mt-1 lg:absolute lg:left-[20%]  lg:bottom-[5%] bg-white rounded-3xl  z-10 gap-3  avetar'>
+    <img className='w-[50px] h-[50px] rounded-full ml-3 ' src={img} alt="" />
     <p className='lg:w-[304px] text-[16px] text-start text-[#2D3B36] leading-[20px] font_normal'>While giving you an invigorating cleansing experience.</p>
 </div>
-              </div>
+             </div>
           </div>
 
         </div>
         <div>
-            <h1 className='font_bold_800 SKINEARE2 font-extrabold lg:text-[305px] text-[#2D3B36] z-0 lg:absolute lg:top-[58rem]'> SKINEARE</h1>
+            <h1 className='font_bold_800 SKINEARE2 font-extrabold lg:text-[305px] text-[#2D3B36] z-0 lg:absolute top-[79%] '> SKINEARE</h1>
 
         </div>
             

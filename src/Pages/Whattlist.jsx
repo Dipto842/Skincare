@@ -9,7 +9,7 @@ import Swal from "sweetalert2";
 const Whattlist = () => {
     const [Data,setData]=useState([])
     useEffect((()=>{
-        axios.get('https://skincare-backend-seven.vercel.app/whattlist/list')
+        axios.get('http://localhost:5000/whattlist/list')
 .then(res=>setData(res.data))
 .catch()
     }),[])
@@ -24,7 +24,7 @@ Data.map((item)=>{
    
   
    
-      axios.post('https://skincare-backend-seven.vercel.app/sidebarData/add',item)
+      axios.post('http://localhost:5000/sidebarData/add',item)
        
       .then( ()=>{
         
@@ -52,7 +52,7 @@ Data.map((item)=>{
 
 
   const hendelDelete =(id)=>{
-    axios.delete(`https://skincare-backend-seven.vercel.app/whattlist/delete/${id}`)
+    axios.delete(`http://localhost:5000/whattlist/delete/${id}`)
     .then(
         Swal.fire({
   title: "Product Delete",

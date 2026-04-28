@@ -11,7 +11,7 @@ const Sidebar = () => {
 
   // Fetch data from the API based on the selected ID
   const fetchData = async () => {
-    const Data = await axios.get("https://skincare-backend-seven.vercel.app/sidebarData");
+    const Data = await axios.get("http://localhost:5000/sidebarData");
     setSelectedIdData(Data.data || []);
   };
 
@@ -20,7 +20,7 @@ const Sidebar = () => {
     // Fetch products data
 
     axios
-      .get("https://skincare-backend-seven.vercel.app/carid")
+      .get("http://localhost:5000/carid")
       .then((res) => setproducts(res.data))
       .catch((err) => console.error("Error:", err));
   }, []);
@@ -30,14 +30,14 @@ const Sidebar = () => {
       if (item.name === id) {
         console.log(item.name, id);
 
-        await axios.post("https://skincare-backend-seven.vercel.app/sidebarData/add", item);
+        await axios.post("http://localhost:5000/sidebarData/add", item);
 
         fetchData();
       }
     });
   };
   const hedelsub = async (id) => {
-    await axios.post("https://skincare-backend-seven.vercel.app/sidebarData/subtract", { _id: id });
+    await axios.post("http://localhost:5000/sidebarData/subtract", { _id: id });
     fetchData();
   };
 
@@ -50,7 +50,7 @@ const Sidebar = () => {
   }, 0);
 // Delete
   const hendelDelete = (id) => {
-    axios.delete(`https://skincare-backend-seven.vercel.app/sidebarData/delete/${id}`)
+    axios.delete(`http://localhost:5000/sidebarData/delete/${id}`)
     .then(
       Swal.fire({
         title: "Product Delete",
@@ -65,7 +65,7 @@ const Sidebar = () => {
 // whattlist 
   const hendewhattlist = (products) => {
     axios
-      .post("https://skincare-backend-seven.vercel.app/whattlist", products)
+      .post("http://localhost:5000/whattlist", products)
       .then(() => {
         Swal.fire({
           title: "Product Add to Whattlist🥰😘",
