@@ -66,7 +66,7 @@ console.log('user',user);
 
   return (
     <div>
-      <div className="navbar bg-[#eff5e1]  shadow-sm mt-[-31px]">
+      <div className="navbar bg-[#eff5e1]  shadow-sm ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
