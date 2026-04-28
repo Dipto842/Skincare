@@ -78,11 +78,19 @@ const Login = () => {
              <input type="submit" className="mx-auto btn btn-secondary  h-11 rounded-lg  text-white   w-full"></input>
             </div>
       <div className=" text-pink-500 "> <a href="/register">Create a new account</a></div>
+   
           </form>
+              <div className="text-pink-500">
+        <h1>Logen Password </h1>
+        Email:diptobakshi72@gmail.com <br />
+        password:12345678
+      </div>
         </div>
 
       
       </div>
+
+     
 
     </div>
   );
