@@ -20,7 +20,7 @@ const Navbar = () => {
   
 
   const Dataface = async () => {
-    const data = await axios.get("http://localhost:5000/sidebarData");
+    const data = await axios.get("https://skincare-backend-seven.vercel.app/sidebarData");
     setData(data.data);
   };
   useEffect(() => {

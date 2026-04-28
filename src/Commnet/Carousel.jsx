@@ -19,7 +19,7 @@ export default function ProductSlider() {
 
   const freceData = async () => {
     const Data = await axios.get(
-      "http://localhost:5000/carid",
+      "https://skincare-backend-seven.vercel.app/carid",
     );
     setProducts(Data.data);
   };
@@ -45,7 +45,7 @@ export default function ProductSlider() {
       if (item._id === id) {
         axios
           .post(
-            "http://localhost:5000/sidebarData/add",
+            "https://skincare-backend-seven.vercel.app/sidebarData/add",
             item,
           )
 

@@ -11,7 +11,7 @@ const AllData = () => {
     const [selekt,setselekt]=useState("All")
     const [stock,setstock]=useState("All")
     useEffect(()=>{
-        axios.get('http://localhost:5000/AllData')
+        axios.get('https://skincare-backend-seven.vercel.app/AllData')
         .then(data=>setData(data.data))
 
     },[])
@@ -26,7 +26,7 @@ Data.map((item)=>{
    
   
    
-      axios.post('http://localhost:5000/sidebarData/add',item)
+      axios.post('https://skincare-backend-seven.vercel.app/sidebarData/add',item)
        
       .then( ()=>{
         
@@ -54,7 +54,7 @@ Data.map((item)=>{
   // whattlist 
   const hendewhattlist = (products) => {
     axios
-      .post("http://localhost:5000/whattlist", products)
+      .post("https://skincare-backend-seven.vercel.app/whattlist", products)
       .then(() => {
         Swal.fire({
           title: "Product Add to Whattlist🥰😘",

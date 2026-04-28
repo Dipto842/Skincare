@@ -25,7 +25,7 @@ const Product = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/carid")
+      .get("https://skincare-backend-seven.vercel.app/carid")
       .then((res) => setproducts(res.data));
   }, []);
 
@@ -48,7 +48,7 @@ const Product = () => {
       console.log(item._id, id);
       if (item._id === id) {
         axios
-          .post("http://localhost:5000/sidebarData/add", item)
+          .post("https://skincare-backend-seven.vercel.app/sidebarData/add", item)
 
           .then(() => {
             Swal.fire({

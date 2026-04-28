@@ -9,7 +9,7 @@ const AllIteam = () => {
 const [product,setProducts]= useState([])
 
       const freceData = async()=>{
-   const Data = await axios.get("http://localhost:5000/carid")
+   const Data = await axios.get("https://skincare-backend-seven.vercel.app/carid")
              setProducts(Data.data)
              console.log(Data.data);
              
@@ -19,7 +19,7 @@ const [product,setProducts]= useState([])
   const hendelDelete =(id)=>{
     console.log(id);
     
-    axios.delete(`http://localhost:5000/carid/delete/${id}`)
+    axios.delete(`https://skincare-backend-seven.vercel.app/carid/delete/${id}`)
     .then(()=>{
 Swal.fire({
             title: `Delete success`,
