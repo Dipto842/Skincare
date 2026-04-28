@@ -1,38 +1,52 @@
-# Luxury Skincare Landing Page
+# 🧴 Skincare - E-commerce Skincare Website
 
-This project is a fully responsive landing page for a luxury skincare brand, built precisely according to the provided Figma design. It showcases pixel-perfect UI implementation with smooth animations and interactive elements using React, Tailwind CSS, and GSAP.
-
----
-
-## 🚀 Live Demo  
-https://skincare-eosin.vercel.app
+Skincare is a modern and responsive skincare product web application where users can explore beauty and skincare products, view details, and experience a smooth UI/UX with animations.
 
 ---
 
-## 🛠 Features
+## 🚀 Live Demo
 
-- **Responsive Design**: Optimized for Mobile, Tablet, and Desktop devices using Tailwind CSS.  
-- **Loading Screen Animation**: Smooth, elegant fade-out effect on initial page load for a premium feel.  
-- **Landing Section Text Animation**: Subtle word-by-word darkening animation on scroll that brings the text to life.  
-- **Best Selling Products**: Horizontally sliding product cards with animated, tactile buttons for mobile and tablet views.  
-- **FAQ Section**: Smooth expand/collapse animation with ease-in-out transitions for better UX.  
-- **Pixel-Perfect Layout**: Carefully matched to the Figma design with attention to spacing, typography, and colors.
+🌐 Live Site: https://skincare-eosin.vercel.app
 
 ---
 
-## 🧰 Tech Stack
+## 📌 Project Overview
 
-- React.js (Create React App)  
-- Tailwind CSS for styling and responsiveness  
-- GSAP (GreenSock Animation Platform) for animations  
-- Vercel / Netlify for deployment  
+Skincare is built using the MERN stack. It provides a clean interface for browsing skincare products with smooth animations and responsive design. The backend handles product data using Express and MongoDB.
 
 ---
 
-## ⚙️ Installation & Running Locally
+## 🛠️ Tech Stack
 
-1. Clone the repository:
+### Frontend
+- React.js
+- Tailwind CSS
+- Framer Motion
+- GSAP
+- Swiper
+- Axios
+- SweetAlert2
+- Firebase
 
-```bash
-git clone https://github.com/Dipto842/Skincare.git
-cd luxury-skincare-landing
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- CORS
+- dotenv
+
+---
+
+## 📁 Features
+
+- 🧴 Browse skincare products
+- 🔍 View product details
+- 🎨 Smooth animations (Framer Motion + GSAP)
+- 📱 Fully responsive design
+- ⚡ Fast API with Express & MongoDB
+- 🔔 Alert system with SweetAlert2
+
+---
+
+## 📂 Project Structure
